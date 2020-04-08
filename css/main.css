@@ -8,7 +8,8 @@
 
 body { 
 	font-family: Montserrat;
-	font-size: 14px; 
+	font-size: 14px;
+	background-color: #F2F2F2;
 }
 
 ul {
@@ -16,6 +17,13 @@ ul {
 	margin: 0;
 	padding: 0;
 }
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+a:visited { color: black; }
 
 .header {
 	height: 90vh;
@@ -156,6 +164,42 @@ ul {
 }
 
 .information__text--highlighted { color: #e4bb23; }
+
+/****** CONTENT STYLING ******/
+
+.content {
+	width: 970px;
+	margin: auto;
+}
+
+.categories {
+	margin: 20px 0;
+	border-bottom: 1px solid #c4c4c4;
+}
+
+.categories__tab {
+	display: flex;
+	justify-content: center;
+}
+
+.categories__name {
+	font-size: .9rem;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom 0.5s ;
+	text-align: center;
+	margin: 0 30px;
+}
+
+.categories__name:hover {
+	border-color: #e4bb23;
+}
+
+.categories__name > a {
+	color: #e4bb23;
+	font-weight: bold;
+}
 
 @keyframes pulse {
 	from {
